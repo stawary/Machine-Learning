@@ -4,6 +4,7 @@ from sklearn.naive_bayes import GaussianNB #http://scikit-learn.org/stable/modul
 from sklearn.metrics import accuracy_score #http://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html
                                            #计算结果的准确率
 from time import time #用以查看训练和预测所用的时间
+from class_vis import prettyPicture, output_image
 
 clf = GaussianNB() #生成分类器，参数可查看文档
 t0 = time()
@@ -16,3 +17,7 @@ print ("predicting time:", round(time()-t0, 3), "s")
 
 accuracy = accuracy_score(labels_test, pred) #得到准确率
 print(accuracy)
+
+prettyPicture(clf, features_test, labels_test) #展示以此分类器得到的决策边界
+output_image("test.png", "png", open("test.png", "rb").read()) 
+

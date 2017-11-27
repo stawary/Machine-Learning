@@ -6,6 +6,8 @@ from sklearn.metrics import accuracy_score #http://scikit-learn.org/stable/modul
 from time import time #用以查看训练和预测所用的时间
 from class_vis import prettyPicture, output_image
 
+features_train,labels_train,features_test, labels_test =  #数据源自己定义
+
 clf = GaussianNB() #生成分类器，参数可查看文档
 t0 = time()
 clf.fit(features_train,labels_train) #训练

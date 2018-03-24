@@ -3,7 +3,7 @@
 
 ### 准备工作
 
-这个项目需要安装**Python 2.7**和以下的Python函数库：
+本项目采用安装**Python 3.6**和以下的Python函数库：
 
 - [NumPy](http://www.numpy.org/)
 - [matplotlib](http://matplotlib.org/)

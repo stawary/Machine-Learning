@@ -2,7 +2,7 @@
 ## 预测泰坦尼克号乘客幸存率
 
 ### 安装要求
-这个项目要求使用 **Python 2.7** 以及安装下列python库
+本项目采用用 **Python 3.6** 以及安装下列python库
 
 - [NumPy](http://www.numpy.org/)
 - [Pandas](http://pandas.pydata.org)
